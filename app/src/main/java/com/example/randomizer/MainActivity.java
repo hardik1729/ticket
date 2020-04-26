@@ -112,7 +112,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void save_ticket(View view) {
         // Do something in response to button
-        Log.d("start",message+"message");
         TableLayout ticket = (TableLayout) findViewById(R.id.ticket);
         if(message==null){
             message="";
@@ -195,7 +194,6 @@ public class MainActivity extends AppCompatActivity {
                     new String[] {Manifest.permission.WRITE_EXTERNAL_STORAGE,Manifest.permission.READ_EXTERNAL_STORAGE},
                     1);
         }
-        Log.d("end",message);
     }
 
     public void setData(){
